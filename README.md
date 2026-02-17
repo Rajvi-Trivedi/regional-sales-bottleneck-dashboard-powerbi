@@ -1,9 +1,3 @@
-Perfect 👌 Here is your **professional README file** according to your final dashboard.
-
-You can copy this into a `.txt` file or README section.
-
----
-
 # 📊 Regional Sales Bottleneck Dashboard
 
 **Power BI Project – 2025**
