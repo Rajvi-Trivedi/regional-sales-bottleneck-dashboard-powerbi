@@ -1,119 +1,113 @@
-# 📊 Regional Sales Bottleneck Dashboard
+# Regional Sales Bottleneck Dashboard
 
-**Power BI Project – 2025**
-
----
-
-## 📌 Project Overview
-
-This project analyzes regional sales performance using SQL and Power BI.
-The objective is to identify sales trends, revenue distribution, and potential bottlenecks such as cancellations and underperforming regions.
-
-The dashboard provides a clear business view of sales activity across regions and product categories.
+**Business Intelligence Project | SQL + Power BI | 2025**
 
 ---
 
-## 🗂 Dataset Used
+## Project Overview
 
-**File Name:** RegionalSales2025.csv
+This project analyzes regional sales performance to identify revenue trends, operational inefficiencies, and sales bottlenecks such as high cancellation and return rates.
 
-### Key Columns:
+Using SQL for data exploration and Power BI for visualization, the solution transforms transactional sales data into an interactive executive dashboard for business decision-making.
 
-* OrderID
-* Date
-* CustomerID
+---
+
+## Dataset Summary
+
+**Source:** `RegionalSales2025.csv`
+**Scope:** Multi-region sales transactions
+
+### Key Fields
+
+* Order ID
+* Order Date
+* Customer ID
 * Region (East, West, North, South)
-* ProductName
-* Category
-* Quantity
-* UnitPrice
-* TotalAmount
-* OrderStatus (Completed, Cancelled, Returned)
-* SalesAgent
+* Product Name & Category
+* Quantity & Unit Price
+* Total Amount
+* Order Status (Completed, Cancelled, Returned)
+* Sales Agent
 
 ---
 
-## 🧮 SQL Analysis Performed
+## SQL Analysis (MySQL)
 
-The following analysis queries were written in MySQL:
+Data exploration and aggregation were performed using structured SQL queries, including:
 
-1. Monthly sales trend across all regions
-2. Percentage of cancelled and returned orders per region
-3. Regions/products with highest revenue loss
-4. Average order value by category
-5. Top performing sales agents
-6. Category-wise contribution to total sales
-7. Customers with frequent returns
+* Monthly sales trend analysis
+* Cancellation and return rate by region
+* Revenue loss identification
+* Average order value by category
+* Sales agent performance ranking
+* Category contribution to total revenue
+* Customer return behavior analysis
 
-All SQL queries are saved in:
-**SalesBottleneck.sql**
+All queries are documented in:
+`SalesBottleneck.sql`
 
 ---
 
-## 📈 Power BI Dashboard Components
+## Power BI Dashboard
 
-### 🔹 KPI Metrics
+### Executive KPIs
 
-* Total Sales
+* Total Revenue
 * Total Cancellations
 * Average Order Value
 
----
+### Visual Components
 
-### 🔹 Visualizations
+**Regional Sales Matrix (Heatmap)**
+Highlights category-level performance across regions using conditional formatting.
 
-1. **Regional Sales by Category (Heatmap / Matrix)**
-   Displays sales distribution across regions and product categories using conditional formatting.
+**Order Status Analysis (Stacked Bar Chart)**
+Displays completed vs cancelled vs returned orders by region.
 
-2. **Order Status by Region (Stacked Bar Chart)**
-   Shows count of completed, cancelled, and returned orders per region.
-
-3. **Total Sales by Month and Region (Line Chart)**
-   Displays monthly sales trend comparison across regions.
+**Monthly Sales Trend (Line Chart)**
+Tracks revenue performance over time across regions.
 
 ---
 
-### 🔹 Interactive Filters (Slicers)
+### Interactive Filters
 
-* Category
-* SalesAgent
 * Region
+* Category
+* Sales Agent
 
-These allow dynamic filtering of all visuals.
-
----
-
-## 🎯 Key Business Insights
-
-* Identify underperforming regions
-* Detect regions with high cancellation rates
-* Analyze category-level revenue distribution
-* Track monthly sales performance
-* Understand customer spending patterns
+Enables dynamic slicing for deeper analysis.
 
 ---
 
-## 📦 Final Deliverables
+## Key Business Insights
 
-* SalesBottleneck.sql
-* Bottleneck_Dashboard.pbix
-* ExecutiveSummary.txt
-* README.txt
-
----
-
-## 🛠 Tools Used
-
-* MySQL (SQL Analysis)
-* Power BI Desktop (Data Visualization)
-* Excel / CSV Data Source
+* Identified underperforming regions with higher cancellation rates
+* Highlighted product categories contributing to revenue loss
+* Revealed sales seasonality patterns
+* Detected top-performing and low-performing sales agents
+* Provided visibility into return-heavy customers
 
 ---
 
-## 👩‍💻 Author
+## Deliverables
+
+* `SalesBottleneck.sql`
+* `Bottleneck_Dashboard.pbix`
+* Executive summary documentation
+
+---
+
+## Tools & Technologies
+
+* MySQL (Data Querying & Aggregation)
+* Power BI Desktop (Dashboard & Visualization)
+* CSV Data Source
+
+---
+
+## Author
 
 Rajvi Trivedi
-Business Intelligence / Data Analytics Project
+Data Analyst | Business Analyst
 
 ---
-
